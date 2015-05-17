@@ -1,19 +1,20 @@
 Summary:	GNOME Nibbles - classic snake game
 Summary(pl.UTF-8):	Nibbles dla GNOME - klasyczna gra w węża
 Name:		gnome-nibbles
-Version:	3.12.2
+Version:	3.16.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nibbles/3.12/%{name}-%{version}.tar.xz
-# Source0-md5:	2d06f838e6505a216ff18f5d6f32387e
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nibbles/3.16/%{name}-%{version}.tar.xz
+# Source0-md5:	0513f988e7fbed2d74e1064c87459e9b
 URL:		https://wiki.gnome.org/Apps/Nibbles
+BuildRequires:	appstream-glib-devel
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	clutter-devel >= 1.14.4
 BuildRequires:	clutter-gtk-devel >= 1.2.0
 BuildRequires:	gnome-common
-BuildRequires:	gtk+3-devel >= 3.10.0
+BuildRequires:	gtk+3-devel >= 3.15.0
 BuildRequires:	intltool >= 0.50
 BuildRequires:	libcanberra-gtk3-devel >= 0.26
 BuildRequires:	librsvg-devel >= 2.32.0
@@ -23,7 +24,7 @@ Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	glib2 >= 1:2.26.0
 Requires:	clutter >= 1.14.4
 Requires:	clutter-gtk >= 1.2.0
-Requires:	gtk+3 >= 3.10.0
+Requires:	gtk+3 >= 3.15.0
 Requires:	hicolor-icon-theme
 Requires:	libcanberra-gtk3 >= 0.26
 Requires:	librsvg >= 2.32.0
@@ -68,12 +69,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 %glib_compile_schemas
-%update_icon_cache HighContrast
 %update_icon_cache hicolor
 
 %postun
 %glib_compile_schemas
-%update_icon_cache HighContrast
 %update_icon_cache hicolor
 
 %files -f %{name}.lang
@@ -84,7 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/glib-2.0/schemas/org.gnome.nibbles.gschema.xml
 %{_datadir}/gnome-nibbles
 %{_desktopdir}/gnome-nibbles.desktop
-%{_iconsdir}/HighContrast/*/apps/gnome-nibbles.png
-%{_iconsdir}/hicolor/*/apps/gnome-nibbles.png
+%{_iconsdir}/hicolor/*x*/apps/gnome-nibbles.png
 %{_iconsdir}/hicolor/scalable/apps/gnome-nibbles.svg
+%{_iconsdir}/hicolor/scalable/apps/gnome-nibbles-symbolic.svg
 %{_mandir}/man6/gnome-nibbles.6*
