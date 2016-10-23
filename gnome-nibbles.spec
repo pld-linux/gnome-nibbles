@@ -1,12 +1,12 @@
 Summary:	GNOME Nibbles - classic snake game
 Summary(pl.UTF-8):	Nibbles dla GNOME - klasyczna gra w węża
 Name:		gnome-nibbles
-Version:	3.20.0
+Version:	3.22.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nibbles/3.20/%{name}-%{version}.tar.xz
-# Source0-md5:	13d0bf244353ff901be162a85f94e5d2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nibbles/3.22/%{name}-%{version}.tar.xz
+# Source0-md5:	97daff7427a19c5dfed225e26442e283
 URL:		https://wiki.gnome.org/Apps/Nibbles
 BuildRequires:	appstream-glib-devel
 BuildRequires:	autoconf >= 2.63
@@ -18,7 +18,7 @@ BuildRequires:	gnome-common
 BuildRequires:	gtk+3-devel >= 3.18.0
 BuildRequires:	intltool >= 0.50.2
 BuildRequires:	libcanberra-gtk3-devel >= 0.26
-BuildRequires:	libgames-support-devel
+BuildRequires:	libgnome-games-support-devel
 BuildRequires:	libgee-devel
 BuildRequires:	librsvg-devel >= 2.32.0
 BuildRequires:	pkgconfig
