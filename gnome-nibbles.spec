@@ -18,14 +18,14 @@ BuildRequires:	gnome-common
 BuildRequires:	gtk+3-devel >= 3.18.0
 BuildRequires:	intltool >= 0.50.2
 BuildRequires:	libcanberra-gtk3-devel >= 0.26
-BuildRequires:	libgnome-games-support-devel
-BuildRequires:	libgee-devel
+BuildRequires:	libgnome-games-support-devel >= 1
+BuildRequires:	libgee-devel >= 0.8
 BuildRequires:	librsvg-devel >= 2.32.0
 BuildRequires:	pkgconfig
 BuildRequires:	vala >= 2:0.28.0
 BuildRequires:	yelp-tools
 Requires(post,postun):	gtk-update-icon-cache
-Requires(post,postun):	glib2 >= 1:2.26.0
+Requires(post,postun):	glib2 >= 1:2.40.0
 Requires:	clutter >= 1.22.0
 Requires:	clutter-gtk >= 1.4.0
 Requires:	glib2 >= 1:2.40.0
@@ -52,7 +52,7 @@ przemieszcza się po planszy zjadając diamenty, unikając zderzeń ze
 
 %build
 %{__intltoolize}
-%{__aclocal}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__automake}
 %configure \
