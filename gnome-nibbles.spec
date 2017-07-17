@@ -14,7 +14,6 @@ BuildRequires:	automake >= 1:1.11
 BuildRequires:	clutter-devel >= 1.22.0
 BuildRequires:	clutter-gtk-devel >= 1.4.0
 BuildRequires:	glib2-devel >= 1:2.40.0
-BuildRequires:	gnome-common
 BuildRequires:	gtk+3-devel >= 3.18.0
 BuildRequires:	intltool >= 0.50.2
 BuildRequires:	libcanberra-gtk3-devel >= 0.26
