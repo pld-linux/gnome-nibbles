@@ -2,18 +2,19 @@
 Summary:	GNOME Nibbles - classic snake game
 Summary(pl.UTF-8):	Nibbles dla GNOME - klasyczna gra w węża
 Name:		gnome-nibbles
-Version:	4.0.4
+Version:	4.1.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications/Games
-Source0:	https://download.gnome.org/sources/gnome-nibbles/4.0/%{name}-%{version}.tar.xz
-# Source0-md5:	1759382487dc7e384429e82fe2a3c357
+Source0:	https://download.gnome.org/sources/gnome-nibbles/4.1/%{name}-%{version}.tar.xz
+# Source0-md5:	d6c8a2f660bfda860e63b37096f65ad7
 URL:		https://wiki.gnome.org/Apps/Nibbles
 BuildRequires:	appstream-glib
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.66.0
 BuildRequires:	gsound-devel >= 1.0.2
 BuildRequires:	gtk4-devel >= 4.6
+BuildRequires:	libadwaita-devel >= 1.5.0
 BuildRequires:	libgnome-games-support2-devel >= 2.0.0
 BuildRequires:	libgee-devel >= 0.8
 BuildRequires:	librsvg-devel >= 1:2.32.0
@@ -23,7 +24,7 @@ BuildRequires:	pango-devel >= 1:1.10
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vala >= 2:0.44
+BuildRequires:	vala >= 2:0.55.1
 BuildRequires:	vala-gsound >= 1.0.2
 BuildRequires:	vala-libgee >= 0.8
 BuildRequires:	vala-libgnome-games-support2 >= 2.0.0
@@ -35,6 +36,7 @@ Requires:	glib2 >= 1:2.66.0
 Requires:	gsound >= 1.0.2
 Requires:	gtk4 >= 4.6
 Requires:	hicolor-icon-theme
+Requires:	libadwaita >= 1.5.0
 Requires:	libgnome-games-support2 >= 2.0.0
 Requires:	librsvg >= 1:2.32.0
 Provides:	gnome-games-gnibbles = 1:%{version}-%{release}
